@@ -1,0 +1,228 @@
+body{
+	margin:0;
+	font-family: "Bauhaus 93", sans-serif;
+
+	line-height: 1.5;
+	color: black;
+
+}
+
+h1,h2,h3{
+	margin: 0;
+}
+
+/* container */
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* main */
+.main{
+	padding-top: 100px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+
+	/*background: url("1.jpg") center no-repeat;
+	background-size: cover;*/
+}
+
+.main_cont{
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	border: 2px solid #1C6B72;
+
+	border-radius: 15px;
+	padding-bottom: 30px;
+	background-color: white;
+	opacity: 0.75;
+	margin-bottom: 50px;
+	margin-top: 220px;
+}
+
+.title1{
+	padding-top: 30px;
+	font-size: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 1;
+	color: #505050;
+	padding-bottom: 5px;
+}
+
+.main-form{
+	margin-top: 10px;
+	
+	text-align: center;
+	font-family: "Aerial", sans-serif;
+}
+
+.inputs{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 370px;
+
+	height: 20px;
+	width: 250px;
+	border-radius: 6px;
+
+	text-align: center;
+
+}
+.area{
+	margin-left: 320px;
+	height: 50px;
+	width: 350px;
+	border-radius: 6px;
+
+	text-align: center;
+}
+
+.area1{
+	margin-left: 300px;
+	height: 50px;
+	width: 350px;
+	border-radius: 6px;
+
+	text-align: center;
+}
+
+.button{
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px 15px;
+
+	border: 3px solid #505050;
+
+	font-size: 20px;
+	font-weight: 700;
+	color: #505050;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: background 0.1s linear, color 0.1s linear;
+	border-radius: 8px;
+}
+
+.button:hover{
+	background-color: #001D18;
+	color: #C7FCEC;
+}
+
+.data{
+	color: white;
+	border: 2px solid #1C6B72;
+	background-color: white;
+	opacity: 0.7;
+	border-radius: 10px;
+	text-align: center;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.contact{
+	color:#505050;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-right: 100px;
+}
+
+.email{
+	color:#505050;
+	padding-right: 5px;
+	padding-left: 5px;
+	text-decoration: none;
+}
+
+.email:hover{
+	color: white;
+	background-color: black;
+	border-radius: 7px;
+}
+
+.phone{
+	color:#505050;
+	text-decoration: none;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.phone:hover{
+	color: white;
+	background-color: black;
+	border-radius: 7px;
+}
+
+/* header */
+.header{
+	width: 100%;
+	padding-top: 30px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo{
+	font-size: 40px;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 1;
+	color: white;
+	-webkit-text-stroke: .07em rgba(0,0,0,.5);
+	text-shadow: 2px 0 white;
+}
+
+.nav{
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.ssilka{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px;
+	color:white;
+	text-decoration: none;
+	position: relative;
+
+	transition: color 0.1s linear;
+}
+
+.ssilka:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	opacity: 0;
+	background-color: white;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	background-color:#CC0605;
+	transition: opacity 0.1s linear;
+}
+.ssilka:hover{
+	color:#CC0605;
+}
+
+.ssilka:hover:after{
+	opacity: 1;
+}
